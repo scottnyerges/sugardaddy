@@ -1,0 +1,96 @@
+.container {
+	max-width: 1200px;
+	margin: auto;
+	padding: 20px;
+	border-width: 1px;
+	border-color: black;
+	border-style: solid;
+	text-align: center;
+	font-family: 'Vidaloka', serif;
+	/*font-family: 'Fontdiner Swanky', cursive;*/
+
+
+}
+
+img {
+    max-width: 600px;
+    height: auto;
+}
+
+h1 {
+	font-size: 60px;
+	font-family: 'Fontdiner Swanky', cursive;
+	margin: 0px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+/*    background-color: #333;
+*/    text-align: center;
+    
+}
+
+li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+li a {
+    display: block;
+/*    color: white;
+*/    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 5px;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF FOUR  */
+.span_4_of_4 {
+	width: 100%;
+}
+.span_3_of_4 {
+	width: 74.6%;
+}
+.span_2_of_4 {
+	width: 49.2%;
+}
+.span_1_of_4 {
+	width: 23.8%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 { width: 100%; }
+img { max-width: 300px; height: auto; }
+h1 { font-size: 43px; font-family: 'Fontdiner Swanky', cursive; margin: 0px; }
+h2 { font-size: 20px; }
+
+}
